@@ -1,0 +1,20 @@
+package com.cursoceat.main;
+
+public class Empleado extends Persona {
+	
+	public double salario;
+
+	public Empleado(String nombre, byte edad, double estatura, double salario) {
+		super(nombre, edad, estatura);
+		this.salario = salario;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+}
