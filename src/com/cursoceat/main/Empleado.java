@@ -17,4 +17,9 @@ public class Empleado extends Persona {
 		this.salario = salario;
 	}
 	
+	@Override
+	void mostrarDatos() {
+		super.mostrarDatos();
+		System.out.println("Salario: "+ this.salario);
+	}
 }

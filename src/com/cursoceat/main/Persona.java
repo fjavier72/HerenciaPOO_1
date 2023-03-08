@@ -2,9 +2,9 @@ package com.cursoceat.main;
 
 public class Persona {
 	
-	private String nombre;
-	private byte edad;
-	private double estatura;
+	protected String nombre;
+	protected byte edad;
+	protected double estatura;
 	
 	public Persona(String nombre, byte edad, double estatura) {
 		this.nombre = nombre;
@@ -36,6 +36,12 @@ public class Persona {
 
 	public void setEstatura(double estatura) {
 		this.estatura = estatura;
+	}
+	
+	void mostrarDatos() {
+		System.out.println("Nombre: "+ this.nombre);
+		System.out.println("Edad: " + this.edad);
+		System.out.println("Estatura: " + this.estatura);
 	}
 	
 }
